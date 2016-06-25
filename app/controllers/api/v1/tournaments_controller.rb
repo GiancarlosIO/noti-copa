@@ -10,7 +10,7 @@ before_action :find_tournament, only: [:show, :update]
   end
 
   def show
-
+    
   end
 
   def update
