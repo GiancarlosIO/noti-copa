@@ -1,4 +1,4 @@
-class Api::V1::GamesController < applicationController
+class Api::V1::GamesController < ApplicationController
   before_action :find_game, only: [:show, :update]
 
   def index
@@ -12,7 +12,7 @@ class Api::V1::GamesController < applicationController
   def create
     #code
   end
-  
+
   def update
     #code
   end
