@@ -5,23 +5,20 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  schema_search_path: "public,shared_extensions"
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+  database: noticopa_development
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: noticopa_test
 
 production:
-adapter: postgresql
-  encoding: unicode
-  database: noticopa_development
-  pool: 5
+  <<: *default
+  database: noticopa_production
