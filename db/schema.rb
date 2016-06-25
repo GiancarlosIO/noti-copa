@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160625214642) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "games", force: :cascade do |t|
     t.string   "team_1"
     t.string   "team_2"
@@ -23,7 +26,7 @@ ActiveRecord::Schema.define(version: 20160625214642) do
     t.datetime "updated_at",    null: false
   end
 
-  add_index "games", ["tournament_id"], name: "index_games_on_tournament_id"
+  add_index "games", ["tournament_id"], name: "index_games_on_tournament_id", using: :btree
 
   create_table "tournaments", force: :cascade do |t|
     t.string   "name"
