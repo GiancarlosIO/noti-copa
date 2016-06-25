@@ -13,10 +13,10 @@ test:
 
 production:
   adapter: postgresql
-  host: ec2-54-243-223-22.compute-1.amazonaws.com
-  database: d3vl0pc30soag
-  user: tmkyxuizstqkek
-  password: NVTAuN783tv2hJlkbO4M0ucvup
+  host: ec2-54-235-102-235.compute-1.amazonaws.com
+  database: dbq7aq05b50dgj
+  user: pkbqrhxtkwfagf
+  password: M3_2HjFTH2k6YPjTpHj92iAKz4
   encoding: unicode
   port: 5432
   pool: 5
