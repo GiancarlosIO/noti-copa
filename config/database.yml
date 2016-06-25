@@ -21,3 +21,5 @@ production:
   database: de9due87kddt2p
   user: fvjwpiiljcqjyx
   password: 0gnCUq1nKW4JcIbu7f4bEsMXVB
+  encoding: unicode
+  pool: 5
