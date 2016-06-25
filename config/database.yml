@@ -12,9 +12,9 @@ test:
   database: noticopa_test
 
 production:
-  host: ec2-54-235-177-62.compute-1.amazonaws.com
-  database: de9due87kddt2p
-  user: fvjwpiiljcqjyx
-  password: 0gnCUq1nKW4JcIbu7f4bEsMXVB
+  host: ec2-54-243-223-22.compute-1.amazonaws.com
+  database: d3vl0pc30soag
+  user: tmkyxuizstqkek
+  password: NVTAuN783tv2hJlkbO4M0ucvup
   encoding: unicode
   pool: 5
