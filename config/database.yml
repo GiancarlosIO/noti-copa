@@ -12,6 +12,7 @@ test:
   database: noticopa_test
 
 production:
+  adapter: postgresql
   host: ec2-54-243-223-22.compute-1.amazonaws.com
   database: d3vl0pc30soag
   user: tmkyxuizstqkek
