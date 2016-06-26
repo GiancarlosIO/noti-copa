@@ -6,15 +6,20 @@ before_action :find_tournament, only: [:show, :update]
   end
 
   def create
-    #code
+    @tournament =  Tournament.new(tournamente_params)
+    if @tournament.save
+      render "api/v1/tournaments/show"
+    else
+      render json: { errors: @tournament.errors.full_messages }, status: :unprocessable_entity
+    end
   end
 
   def show
-    
+
   end
 
   def update
-    #code
+
   end
 
   def destroy
@@ -27,6 +32,6 @@ before_action :find_tournament, only: [:show, :update]
   end
 
   def tournamente_params
-    params.require(:tournament).permit(:name, :status)
+    params.require(:tournament).permit(:name, :status, :date, :description)
   end
 end
